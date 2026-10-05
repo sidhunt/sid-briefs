@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siddhant Badola → PiinPoint — Full-Stack Developer</title>
+<style>
+  :root{--ink:#12161c;--dim:#5b6572;--line:#e3e7ec;--accent:#1f5f4b;--bg:#fff;--soft:#f6f8f7}
+  @media (prefers-color-scheme:dark){:root{--ink:#e8eaed;--dim:#9aa3ae;--line:#2a2f36;--accent:#5fbf9b;--bg:#101317;--soft:#171b20}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  .eyebrow{color:var(--accent);font-weight:650;letter-spacing:.06em;text-transform:uppercase;font-size:12px}
+  h1{font-size:30px;line-height:1.22;margin:14px 0 8px;letter-spacing:-.015em}
+  .sub{color:var(--dim);margin:0 0 34px}
+  h2{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);margin:40px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .pair{border-left:3px solid var(--accent);padding:2px 0 2px 16px;margin:0 0 22px}
+  .pair .ask{color:var(--dim);font-size:14px;margin:0 0 6px}
+  .pair .ask b{color:var(--ink);font-weight:600}
+  .pair p{margin:0}
+  .n{font-variant-numeric:tabular-nums;font-weight:650}
+  .foot{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);color:var(--dim);font-size:14px}
+  a{color:var(--accent)}
+  .note{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:26px 0 0;font-size:14px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Brief prepared for PiinPoint</div>
+  <h1>You need someone who enjoys making complex data useful.<br>I have spent a year making retrieval data <em>measurably</em> useful.</h1>
+  <p class="sub">Siddhant Badola — Waterloo, ON. Senior engineer, 9+ years shipping production systems.
+  Authorized to work in Canada. Available immediately. Contract or full-time; can invoice through DISSID Labs Inc.</p>
+
+  <h2>Your posting, and what I have actually built</h2>
+
+  <div class="pair">
+    <p class="ask">You ask for: <b>&ldquo;AI-powered tools that make location analysis more accessible&rdquo;</b></p>
+    <p>The hard part of that is not the model, it is whether the answer is <em>true</em>. I architected a
+    citation-verified RAG pipeline on LangGraph with SQLite checkpointing — a run that dies mid-flight resumes
+    at the next incomplete node — and an LLM-judge harness that scores <b>fabrication and citation rate on every
+    release</b>. For a product where a customer acts on the output, that control is the feature.</p>
+  </div>
+
+  <div class="pair">
+    <p class="ask">You ask for: <b>Python, PostgreSQL, React, LLMs</b></p>
+    <p>Python and LLM systems are my daily work. I build the layer under them too: a complexity-based routing
+    tier plus self-hosted inference (llama.cpp / llama-swap, OpenAI-compatible) that moved roughly
+    <span class="n">90%</span> of token workload off paid APIs at <span class="n">26.75 tok/s</span> measured on
+    CPU and $0 marginal cost. At a small company, that difference is runway.</p>
+  </div>
+
+  <div class="pair">
+    <p class="ask">You ask for: <b>&ldquo;solve geospatial performance challenges&rdquo;</b></p>
+    <p>Closest honest mapping: I have built and tuned a two-stage semantic cache (cosine pre-filter +
+    cross-encoder verifier) to <span class="n">0.7%</span> false-hit at <span class="n">22.7%</span> recall — the
+    only configuration I measured under 1% on QQP-5000. Same discipline you need on map queries: measure the
+    trade-off, do not assume it. PostGIS and tiling specifically are things I would be learning on your stack.</p>
+  </div>
+
+  <h2>Why I am writing to you directly</h2>
+  <p>PiinPoint has been at this long enough to have customers who depend on the answers. Most of the AI work I see
+  shipped is optimized for a demo; the work I care about is optimized for being right when someone spends money on
+  it. That is the whole pitch — I would rather build the eval that proves a feature is grounded than ship one that
+  sounds confident.</p>
+
+  <div class="note">
+    <b>Two honest notes.</b> First, the posting is a Full-Stack Developer role at 3+ years and I am a senior
+    engineer with 9 — I am not applying to inflate a title, I am applying because I want to work on this problem,
+    and I would rather ask you where a senior AI engineer fits than assume the answer. Second, my geospatial
+    experience is the transferable kind, not PostGIS specifically. If either of those is wrong for what you need
+    right now, tell me and I will not take up more of your time.
+  </div>
+
+  <div class="foot">
+    <p><b>Siddhant Badola</b> · Waterloo, ON · siddhantbadola5@gmail.com · +1 647 861 5795<br>
+    <a href="https://github.com/sidhunt">github.com/sidhunt</a> ·
+    <a href="https://www.linkedin.com/in/sbadola5">linkedin.com/in/sbadola5</a></p>
+    <p>Prepared 2026-10-05. Every number above is one I have measured and can show the working for.
+    This page is one of a small number of company-specific briefs — not a mass mailing.</p>
+  </div>
+
+</div>
+</body>
+</html>
